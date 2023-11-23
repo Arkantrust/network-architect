@@ -2,8 +2,6 @@
 
 Usted debe desarrollar (analizar, diseñar e implementar) un juego de uno o más jugadores, el cual pueda ser modelado utilizando grafos, con un mínimo de **50** vértices y **50** aristas, y tal que para su solución sea posible aplicar al menos **dos** (2) de los algoritmos de grafos que se estudiarán durante el curso: Recorridos sobre Grafos (BFS, DFS), Caminos de Peso Mínimo (Dijkstra, Floyd-Warshall), Árbol de Recubrimiento Mínimo -MST- (Prim, Kruskal). 
 
-El juego debe ser definido por usted y su grupo de máximo 3 personas, incluyéndole.
-
 ## Requerimientos mínimos
 
 - Desarrollar 2 versiones de Grafo (su solución debe funcionar sin problema con las dos versiones, es decir, el programa debe admitir el cambio de la implementación utilizada en cualquier momento y funcionar bien indistintamente de la que se esté usando).
@@ -39,13 +37,13 @@ La estructura Grafo: analizada, diseñada, implementada y probada. Y, Explicaci�
 
 - El problema a solucionar:
 
-- Enunciado suficientemente claro de la situación problemática que solucionarán.
+  - Enunciado suficientemente claro de la situación problemática que solucionarán.
 
-- Especificación de Requerimientos Funcionales del programa que darán solución al problema.
+  - Especificación de Requerimientos Funcionales del programa que darán solución al problema.
 
 ## Entrega Final
 
-Jueves 23 de noviembre de 2023. Poner un tag en el último commit de dicha entrega.
+Sábado 25 de noviembre de 2023. Poner un tag en el último commit de dicha entrega.
 
 - Diseño de Diagrama de Clases del TAD Grafo incluyendo las dos implementaciones y las mejores prácticas de diseño (no olvidar desacoplamiento y generics).
 

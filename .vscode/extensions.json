@@ -1,8 +1,5 @@
 {
     "recommendations": [
         "bierner.markdown-preview-github-styles",
-        "vscjava.vscode-java-pack",
-        "ms-vscode-remote.remote-containers",
-        "vscjava.vscode-gradle"
     ]
 }

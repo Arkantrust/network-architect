@@ -6,3 +6,4 @@ Second project for the course of Algorithms and Data Structures I of ICESI Unive
 
 For the preliminary version of the game, the objective will be to connect some end user devices (phones, laptops, speakers, etc) on a smart home. The player will be able to use routers, switches, and servers (DNS, gateways) as nodes. And, UTP cables, wireless connections like Wi-Fi or other protocols like zigbee as edges.
 
+All the details of the game are in the [requirements](./docs/requirements.md) document.

@@ -61,16 +61,22 @@ A complete graph is a graph in which every pair of vertices is connected by an e
 |`RemoveVertex`| Graph X Vertex | Graph |
 |`AddEdge`| Graph X Vertex X Vertex X Edge | Graph |
 |`RemoveEdge`| Graph X Vertex X Vertex | Graph |
+|`NumNodes`| Graph | Integer |
+|`NumEdges`| Graph | Integer |
 |`Contains`| Graph X Vertex | Boolean |
-|`AreAdjacent`| Graph X Vertex X Vertex | Boolean |
+|`Adjacent`| Graph X Vertex X Vertex | Boolean |
 |`GetNeighbors`| Graph X Vertex | Vertices = { ... } |
+|`HasPath`| Graph X Vertex X Vertex | Boolean |
+|`Degree`| Graph X Vertex | Integer |
+|`GetNodes`| Graph | Vertices = { ... } |
+|`GetEdges`| Graph | Edges = { ... } |
 |`GetVertexValue`| Graph X Vertex | Value of Vertex |
 |`SetVertexValue`| Graph X Vertex X Value | Graph |
 |`GetEdgeValue`| Graph X Vertex X Vertex | Value of Edge |
 |`SetEdgeValue`| Graph X Vertex X Vertex X Value | Graph |
 |`DFS`| Graph X Vertex | Vertices = { ... } |
 |`BFS`| Graph X Vertex | Vertices = { ... } |
-|`Dijkstra`| Graph X Vertex | Vertices = { ... } |
+|`Dijkstra`| Graph X Vertex X Vertex | Vertices = { ... } |
 |`FloydWarshall`| Graph | Paths = { $V_1$ = { Vertices = { ... } }, ..., $V_n$ = { Vertices = { ... } } } |
 |`Prim`| Graph | Vertices = { ... } |
 |`Kruskal`| Graph | Vertices = { ... } |
@@ -137,6 +143,22 @@ A complete graph is a graph in which every pair of vertices is connected by an e
 
 ### Query operations
 
+#### `NumNodes()`
+
+"Return the number of nodes in the graph"
+
+{ pre: Graph = { V, E } }
+
+{ post: Integer }
+
+#### `NumEdges()`
+
+"Return the number of edges in the graph"
+
+{ pre: Graph = { V, E } }
+
+{ post: Integer }
+
 #### `Contains(Vertex)`
 
 "Checks if a vertex is in the graph"
@@ -145,7 +167,7 @@ A complete graph is a graph in which every pair of vertices is connected by an e
 
 { post: Boolean }
 
-#### `AreAdjacent(Vertex, Vertex)`
+#### `Adjacent(Vertex, Vertex)`
 
 "Checks if two vertices are adjacent, meaning if there is an edge connecting them"
 
@@ -160,6 +182,38 @@ A complete graph is a graph in which every pair of vertices is connected by an e
 { pre: Graph = { V, E } $\land$ Vertex $\in$ V }
 
 { post: Vertices = { ... } }
+
+#### `HasPath(Vertex Vertex)`
+
+"Checks if there is a path from one vertex to another"
+
+{ pre: Graph = { V, E } $\land$ Vertex $\in$ V $\land$ Vertex $\in$ V }
+
+{ post: Boolean }
+
+#### `Degree(Vertex)`
+
+"Returns the degree of a vertex"
+
+{ pre: Graph = { V, E } $\land$ Vertex $\in$ V }
+
+{ post: Integer }
+
+#### `GetNodes()`
+
+"Returns the vertices of the graph"
+
+{ pre: Graph = { V, E } }
+
+{ post: Vertices = { ... } }
+
+#### `GetEdges()`
+
+"Returns the edges of the graph"
+
+{ pre: Graph = { V, E } }
+
+{ post: Edges = { ... } }
 
 #### `GetVertexValue(Vertex)`
 
@@ -193,9 +247,9 @@ A complete graph is a graph in which every pair of vertices is connected by an e
 
 { post: Vertices = { ... } }
 
-#### `Dijkstra(Vertex)`
+#### `Dijkstra(Vertex, Vertex)`
 
-"Returns the shortest path from a vertex to all other vertices"
+"Returns the shortest path from a vertex to other vertex"
 
 { pre: Graph = { V, E } $\land$ Vertex $\in$ V }
 

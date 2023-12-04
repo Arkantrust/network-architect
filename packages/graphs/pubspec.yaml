@@ -1,7 +1,7 @@
 name: graphs
 description: "A graph API with implementations for common graph types and algorithms."
 version: 0.0.1
-homepage:
+# homepage:
 
 environment:
   sdk: '>=3.2.2 <4.0.0'

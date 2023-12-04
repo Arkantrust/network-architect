@@ -19,7 +19,7 @@ In the future, the game features will massively outnumber the requirements liste
   
 - [Adjacency list](https://en.wikipedia.org/wiki/Adjacency_list)
 
-Each graph version must be developed from the [ADT](./graph.md) to the [unit tests](./tests.md).
+Each graph version must be developed from the [ADT](./graph.md) to the [unit tests](/packages/graphs/test/).
 
 ## Graph algorithms
 
@@ -38,7 +38,7 @@ Each graph version must be developed from the [ADT](./graph.md) to the [unit tes
   - [requirements specification document](./requirements.md)
   - [ADT design](./graph.md)
   - [class diagram]()
-  - [unit tests design](./tests.md)
+  - [unit tests design](/packages/graphs/test/)
 
 ## Course objective
 

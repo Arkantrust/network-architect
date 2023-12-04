@@ -377,9 +377,12 @@ The demo level is to design a smart home network, the player is given a budget o
 
 Given the course objectives listed at the beginning of this document, the objective is to demonstrate knowledge about graph theory, not to demonstrate knowledge about implementing GUI's or computer networks. Hence, I'll use [flutter framework](https://flutter.dev/) which will allow me to focus on the graph implementation and the algorithms used to solve the problem rather than on the GUI implementation.
 
-First, it is necessary to implement the [graphs API](/packages/graphs/README.md) which will be used to model all graphs and algorithms implementations.
+Note that flutter uses the [dart programming language](https://dart.dev/) which has a very similar syntax to java, so it won't be a problem to understand and implement the graph ADT and the algorithms in dart.
+
+First, it is necessary to implement the [graphs API](/packages/graphs/README.md) which will be used to model all graphs and algorithms in the game. Tests can be found [here](/packages/graphs/test/)
 
 Then creating the UI and business logic listed in the [last section](#design-sketches) of this document will be a piece of cake.
 
-I'll keep updating this section with the class diagram and the unit tests design.
+Here you can see the class diagram for the graph classes in java, which was later translated to dart. Although, I must note making class diagrams is a bit obsolete because of the rapid changing behaviour of these classes. I would've preferred to make a Data Model Diagram
 
+![Class Diagram](./graphs.png)
